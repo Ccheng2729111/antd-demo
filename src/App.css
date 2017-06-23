@@ -1,0 +1,122 @@
+.set-class-component {
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+}
+.set-class-component .add-list {
+  height: 100%;
+  flex: 3;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.set-class-component .add-list .add-Task {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 500px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.set-class-component .sortable-tree {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 100%;
+  flex: 7;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.set-class-component .sortable-tree .root-dir {
+  flex: 2;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.set-class-component .sortable-tree .first-class {
+  flex: 3;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.set-class-component .sortable-tree .second-class {
+  flex: 3;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.set-class-component .sortable-tree .third-class {
+  flex: 3;
+}
+.sortable-tree header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.add-list header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #f7f7f7;
+}
+.add-Task ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.add-Task li {
+  border: 2px solid #42acd4;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 5px 5px 5px 20px;
+  white-space: nowrap;
+  display: inline-table;
+}
+.add-Task input {
+  margin: 5px 5px 5px 20px;
+  padding: 8px;
+  border: 2px dashed #42acd4;
+}
+.test .rst__rowContents {
+  border: 1px solid #42acd4;
+  min-width: 125px;
+}
+.showContainPart {
+  height: 300px;
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+}
+.hideContainPart {
+  display: none;
+}
+.tree-part {
+  position: absolute;
+  width: 100%;
+  top: 150px;
+  height: 450px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.add-second-btn {
+  position: absolute;
+  right: 419px;
+  color: #42acd4;
+}
+.add-third-btn {
+  position: absolute;
+  right: 120px;
+  color: #42acd4;
+}
+.empty-part {
+  flex: 2;
+}
+.add-fitst-btn {
+  padding-top: 15px;
+  width: 50%;
+  margin: 0 auto;
+  color: #42acd4;
+}
+.delete-btn {
+  display: inline;
+}
