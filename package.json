@@ -4,13 +4,20 @@
   "private": true,
   "dependencies": {
     "antd": "^2.11.0",
+    "clipboard": "^1.7.1",
+    "echarts": "^3.6.2",
     "jquery": "^3.2.1",
     "node-sass": "^4.5.3",
-    "react": "^15.5.4",
+    "react": "^15.6.1",
+    "react-clipboard.js": "^1.1.2",
+    "react-copy-to-clipboard": "^5.0.0",
     "react-dnd": "^2.4.0",
     "react-dnd-html5-backend": "^2.4.1",
     "react-dom": "^15.5.4",
-    "sass-loader": "^6.0.6"
+    "react-pdf": "^1.6.1",
+    "react-self-tree": "^0.1.19",
+    "sass-loader": "^6.0.6",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "autoprefixer": "7.1.0",

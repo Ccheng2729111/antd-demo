@@ -11,7 +11,7 @@ class Aom extends Component{
         super(props);
         this.state = {
             treeData:[{title:(
-                <input />
+                <input/>
             )}],
             showTree:true,
             value:'',
@@ -27,6 +27,7 @@ class Aom extends Component{
                     treeData={this.state.treeData}
                     onChange={treeData => this.setState({ treeData })}
                     scaffoldBlockPxWidth={300}
+                    canDrop={false}
                     generateNodeProps={rowInfo => ({
                         buttons: [
                             <button onClick={(event) => this.addNode(rowInfo)}>addchirld</button>,
@@ -40,8 +41,9 @@ class Aom extends Component{
             </div>
         )
     }
-    handlerChange(e){
-        console.log(e.target.value)
+
+    getParentKeyFn(){
+
     }
     /*removeNode(rowInfo) {
         let {node, treeIndex, path} = rowInfo;
@@ -75,7 +77,7 @@ class Aom extends Component{
     addSameNode(rowInfo){
         {
             let NEW_NODE = {title:(
-                <fuck />
+                <input />
             )};
             let {node, treeIndex, path} = rowInfo;
             path.pop();
@@ -92,7 +94,6 @@ class Aom extends Component{
             if(parentKey === -1) {
                 parentKey = null;
             }
-            console.log(parentKey);
             let newTree = addNodeUnderParent({
                 treeData: this.state.treeData,
                 newNode: NEW_NODE,
@@ -106,7 +107,7 @@ class Aom extends Component{
     addNode(rowInfo) {
         let NEW_NODE = {
             title: (
-                <fuck />
+                <input />
             )
         };
         let { path} = rowInfo;
